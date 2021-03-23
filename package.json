@@ -1,5 +1,5 @@
 {
-  "name": "github-npm-registry-workflow",
+  "name": "hcslearning/github-npm-registry-workflow",
   "version": "1.0.0",
   "description": "proyecto para probar workflow o hook de Github para generar paquete en registro NPM de Github por cada release.",
   "main": "index.js",
