@@ -38,8 +38,25 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 ```
 
-2. Actualizar *package.json* con el nuevo número de versión.
+1. Actualizar *package.json* con el nuevo número de versión.
 
-3. Crear un nuevo release dentro del repositorio de Github.
+1. Asegurarse que en *package.json* el nombre del proyecto vaya con el prefijo del nombre de usuario de Github (ej. @hcslearning/mi-proyecto).
 
-**Nota Importante:** El nombre del proyecto debe estar prefijado por el nombre de usuario del repositorio Github (ej. @hcslearning/mi-proyecto).
+1. Asegurarse que en *package.json* NO esté el campo:
+
+``` 
+private: "true"
+```
+
+1. Crear un nuevo release dentro del repositorio de Github.
+
+1. En el proyecto donde se utilice la librería recuerde agregar un archivo *.npmrc* con un contenido similar a:
+
+```
+@hcslearning:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=ghp_AxZdfasdrASDFASDF1312fasdfaasdgasdfaUC
+registry=https://registry.npmjs.org
+```
+
+
+
