@@ -54,6 +54,8 @@ jobs:
 
 1. Asegurarse que en *package.json* el nombre del proyecto vaya con el prefijo del nombre de usuario de Github (ej. @hcslearning/mi-proyecto).
 
+1. Asegurarse que *npm run test* se ejecute de manera exitosa.
+
 1. Asegurarse que en *package.json* NO esté el campo:
 
 ``` 
