@@ -38,9 +38,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 ```
 
-1. Actualizar *package.json* con el nuevo número de versión.
+2. Actualizar *package.json* con el nuevo número de versión.
 
-1. Asegurarse que en *package.json* se agregue en la sección de scripts la tarea *prepare* u otra adecuada según el proyecto, por ej:
+3. Asegurarse que en *package.json* se agregue en la sección de scripts la tarea *prepare* u otra adecuada según el proyecto, por ej:
 
 ```
 "scripts": {
@@ -52,19 +52,19 @@ jobs:
 },
 ```
 
-1. Asegurarse que en *package.json* el nombre del proyecto vaya con el prefijo del nombre de usuario de Github (ej. @hcslearning/mi-proyecto).
+4. Asegurarse que en *package.json* el nombre del proyecto vaya con el prefijo del nombre de usuario de Github (ej. @hcslearning/mi-proyecto).
 
-1. Asegurarse que *npm run test* se ejecute de manera exitosa.
+5. Asegurarse que *npm run test* se ejecute de manera exitosa.
 
-1. Asegurarse que en *package.json* NO esté el campo:
+6. Asegurarse que en *package.json* NO esté el campo:
 
 ``` 
 private: "true"
 ```
 
-1. Crear un nuevo release dentro del repositorio de Github.
+7. Crear un nuevo release dentro del repositorio de Github.
 
-1. En el proyecto donde se utilice la librería recuerde agregar un archivo *.npmrc* con un contenido similar a:
+8. En el proyecto donde se utilice la librería recuerde agregar un archivo *.npmrc* con un contenido similar a:
 
 ```
 @hcslearning:registry=https://npm.pkg.github.com
